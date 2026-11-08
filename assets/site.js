@@ -1,7 +1,10 @@
 // Night sky: a few tiny twinkling stars and, now and then, a faint falling star. Same as the app's home.
 (function () {
   const forced = new URLSearchParams(location.search).get("theme");
-  if (forced) document.documentElement.dataset.theme = forced;
+  if (forced) {
+    document.documentElement.dataset.theme = forced;
+    document.querySelectorAll("img[loading=lazy]").forEach((i) => (i.loading = "eager"));
+  }
   const still = matchMedia("(prefers-reduced-motion: reduce)").matches;
 
   document.querySelectorAll("canvas.stars").forEach((canvas) => {
