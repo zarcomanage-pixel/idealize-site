@@ -1,0 +1,115 @@
+h2	Privacy Policy
+p	Last updated: 8 November 2026
+p	Idealize respects your privacy. This Privacy Policy explains how information is collected, used, stored, shared and protected when you use the Idealize app (on iPhone, iPad and Mac), its widgets and share extension, the website idealizepalace.com, and related services.
+p	In short: your thoughts are yours. We don't sell your information, we don't use your content for advertising, and we don't use it to train AI models. Screenshots and photos are read on your device and the pictures never leave it. Cloud AI only runs after you allow it, and you can turn it off at any time.
+p	By using Idealize, you acknowledge the practices described in this Privacy Policy. Where consent is required for specific processing, we ask for it separately.
+h2	1. Information We Collect
+h3	Account Information
+p	When you create an account, we process your email address, an account identifier, and the sign-in details needed to create, secure and manage your account. If you use Sign in with Apple, Apple may share your name and email address, or a private relay address, according to your choices.
+h3	Content You Create
+p	Idealize helps you get things out of your head and turn them into small, doable steps. Depending on the features you use, your content may include:
+li	what you say (voice recordings) and the text transcribed from them;
+li	what you type, including tasks, notes, dates, places and reminders;
+li	photos and snapped letters or documents you add, and the text read from them;
+li	links, files and text you share into Idealize from other apps;
+li	messages you paste or capture so Idealize can help you reply, which may include words written by other people;
+li	what you choose to tell Idealize about yourself and the people around you, so steps and drafts fit your life;
+li	your progress, such as finished steps, focus sessions and your Palace.
+p	Your content is stored in the app on your device. If you have Idealize Pro and Cloud Sync is on, it is also stored in your private cloud space so it is available on every device where you sign in (see Section 6).
+h3	Sensitive Information You Choose to Share
+p	Idealize is made for busy, scattered and ADHD brains, but it does not ask about your health, and you don't need a diagnosis to use it. We don't request medical information. If you choose to mention health, appointments or other sensitive matters in your content, that information is handled like the rest of your content: kept private, used only to provide the features you use, and processed by AI services only if you allow AI processing.
+h3	Subscription Information
+p	Purchases are processed by Apple through the App Store. Idealize does not receive or store your full payment-card details. We use RevenueCat to manage subscription status and entitlements, which involves purchase identifiers, subscription status and related transaction information. Your plan and free-week status are also recorded in our backend so that Pro features and fair-use limits work for your account.
+h3	Technical Information
+p	We and our service providers may process limited technical information needed to operate, secure and fix Idealize, such as request information, diagnostic information and IP addresses used when your device talks to online services. To keep usage limits fair, our backend counts how many AI requests your account makes. When Cloud Sync is used, we also store technical information needed to keep your devices in step, such as a random device identifier, the device platform, and the last point each device synchronized to.
+p	Idealize does not use advertising identifiers, does not track you across other companies' apps or websites, and does not include third-party advertising or analytics SDKs.
+h2	2. Permissions on Your Device
+p	Idealize asks for each permission only when a feature needs it. Everything else keeps working if you say no, and you can change your choice at any time in your device's Settings.
+h3	Microphone and Speech Recognition
+p	Used so you can hold the bubble and talk. Your recording may be kept with your thought. Speech can be turned into text on your device using Apple's speech recognition, or, if you allow AI processing, by a cloud transcription service (see Section 4).
+h3	Photos (Screenshot Catching)
+p	Only if you turn it on, Idealize looks at your new screenshots to catch bills, free trials, bookings and messages you still owe a reply. The text in each screenshot is read on your device using Apple's on-device text recognition. The pictures themselves never leave your device. If you have allowed AI processing, only the words from screenshots that look like a bill, trial, booking or similar may be sent to an AI service to work out the date, amount and next step. Idealize always asks before adding anything it found. Idealize remembers which screenshots it has already checked, so it doesn't show you the same thing twice.
+h3	Calendar
+p	If you allow it, Idealize reads your calendar to find free time and remind you before things. It only adds events you confirm, into its own "Idealize" calendar. Your calendar events are read on your device.
+h3	Location
+p	Only when something has both a place and a time, Idealize may ask for your location while you're using the app, to work out how long it takes to get there and when you should leave. The travel time is calculated with Apple Maps. Idealize does not store your location and does not send it to our servers or to AI services.
+h3	Notifications and Live Activities
+p	Used for reminders, nudges, "time to leave" alerts, free-trial warnings and the focus timer on your Lock Screen. Notifications are scheduled on your device.
+h2	3. How We Use Your Information
+p	We use information to:
+li	provide, maintain and improve Idealize;
+li	create and secure your account;
+li	save, sort and show your thoughts, steps, reminders and Palace;
+li	keep your content in step across your devices when you use Cloud Sync;
+li	provide AI-assisted features when you have allowed them;
+li	manage your free week, subscriptions, fair-use limits and access to paid features;
+li	send account-related emails, such as confirming your address;
+li	maintain security, prevent misuse and fix technical problems;
+li	answer support requests and meet legal obligations.
+p	We do not sell your personal information. We do not use your content for advertising, and we do not use it to train AI models.
+h2	4. AI Features and Data Processing
+p	Some Idealize features use external AI services. AI processing is optional and needs your explicit permission. Before it is turned on, Idealize shows a consent screen explaining what may be shared and which services process it. Without your permission, Idealize does not send cloud AI requests.
+p	AI processing and Cloud Sync are separate. Turning on Cloud Sync does not send your content to AI services, and allowing AI processing does not turn on Cloud Sync.
+h3	What May Be Shared
+p	Only what the feature you're using needs:
+li	Sorting a brain dump: your recording or its transcript, or what you typed, so it can be split into separate things, put in order and given a tiny first step.
+li	Catching screenshots and snapped letters: the text read from them on your device (never the picture), to find dates, amounts and what to do.
+li	Help when you're stuck, smaller steps and planning your day: the task you're working on and the steps around it.
+li	Messages written for you: the message you want to answer, the context you give, and, if you have shared them, a few notes about you and your writing style.
+li	Asking Bubbles: your question and the thoughts it needs to answer.
+p	We don't intentionally include your name or email address in AI requests, unless they are part of the content you submit.
+h3	On-Device Processing
+p	Some features run fully on your device without sending your content anywhere, for example reading text from screenshots and photos, on-device speech recognition, and, on supported devices, Apple's on-device language model. When AI processing is off, Idealize uses these on-device alternatives where it can, and some results may be simpler.
+h3	AI Infrastructure and Providers
+li	Supabase: our backend, which checks your account, plan and limits and forwards your AI request.
+li	Vercel AI Gateway: routes the request to the AI provider.
+li	Anthropic, Google, OpenAI and xAI: AI language models and speech transcription.
+li	Perplexity: search and information retrieval, where a feature needs it.
+p	Not every request is processed by every listed provider. Depending on the feature, availability and technical needs, different providers may handle the information needed to fulfil your request.
+h3	Your Choices
+p	You can allow or turn off AI processing in Idealize under You → Settings → AI Processing. When you turn it off, new cloud AI requests are blocked, requests in progress are cancelled where technically possible, and what you already have stays. Turning it off does not undo processing that already happened or recall information already sent. If you want to turn it on again, Idealize asks for your permission again. AI permission is linked to your account and is cleared when you sign out or delete your account.
+h3	AI Data Retention
+p	External AI providers may process or temporarily keep information according to their own policies, technical requirements, contracts and legal obligations, and their practices may differ. We aim to share only what is reasonably necessary for the feature you asked for, and we do not guarantee that every provider deletes content immediately after processing.
+h3	Apple Services
+p	Some features use Apple frameworks, such as speech recognition, text recognition, Maps and the on-device language model. Depending on the feature, your device and its settings, Apple may process data on your device or on Apple's servers, under Apple's own privacy terms.
+h2	5. Your Thoughts Belong to You
+p	You keep ownership of everything you create or add in Idealize. Storing, syncing or sorting your content with Idealize does not give us ownership of it. We process your content only as needed to provide Idealize, including Cloud Sync and the AI features you choose to use. You can see what Bubbles uses, and remove the notes about you or your writing style, under You → What Bubbles knows.
+h2	6. Cloud Sync
+p	Cloud Sync keeps your Idealize the same on every device where you sign in. It is an Idealize Pro feature and becomes available in your app as it rolls out. Free accounts don't use Cloud Sync, and their content stays on the device.
+p	When Cloud Sync is on, your thoughts, steps and their details, your Palace and its progress, saved results, and the photos, voice recordings and files attached to your thoughts (up to 25 MB per file) are stored in your private cloud space.
+p	You can turn Cloud Sync off at any time under You → Settings → Sync. Your devices then stop exchanging changes, and what was already synced stays in your private cloud space until you delete your account or ask us to remove it. If your Pro subscription ends, syncing stops and the same applies.
+p	If a device you sign in to already holds content and your cloud space holds content too, Idealize asks what to keep before anything is combined or replaced, and makes a backup on that device first.
+p	Your synced content is private to your account. Our backend only lets your signed-in account read or add to your own cloud space. When you delete something while Cloud Sync is on, a record of the deletion may be kept so it can reach all of your devices, and attached files may remain stored until you delete your account.
+h2	7. Service Providers
+li	Supabase: backend, sign-in, Cloud Sync storage (including attached photos, recordings and files), plan and usage records, and routing of AI requests. Our Supabase project is hosted in the European Union (Ireland).
+li	RevenueCat: subscription management and entitlements.
+li	Apple: App Store purchases and subscriptions, Sign in with Apple, and device services such as speech, text recognition and Maps.
+li	Vercel: AI gateway infrastructure and request routing.
+li	Anthropic, Google, OpenAI, xAI and Perplexity: AI processing, transcription and search, depending on the feature.
+li	Resend: account emails, such as confirming your email address.
+li	GitHub Pages: hosting of this website.
+p	These providers process information only as needed to perform their services, under their own terms, privacy policies and applicable law.
+h2	8. Data Storage and Security
+p	Your content is stored in the app on your device and, if you use Cloud Sync, in your private cloud space with Supabase in the European Union (Ireland). Information sent between the app and our services is encrypted in transit, and content stored with our backend provider is encrypted at rest. Idealize also keeps backups on your device, for example before you sign out or before content is replaced. These backups stay on your device.
+p	We use reasonable technical and organisational measures to protect information against unauthorised access, loss, misuse or alteration. No method of transmission or storage is completely secure.
+h2	9. Data Retention
+p	We keep personal information only as long as reasonably necessary to provide Idealize, for the purposes in this policy, for security, to resolve disputes and to meet legal obligations. Content on your device stays until you delete it, delete your account, or remove the app and its data. Synced content stays in your private cloud space until you delete your account or ask us to remove it. Information processed by external providers, including AI providers, may follow their own retention periods.
+h2	10. Account and Data Deletion
+p	You can permanently delete your account in the app under You → Settings → Account → Delete Account. When deletion is completed, your account and the Idealize data we control are deleted, including everything in your private cloud space and all attached photos, recordings and files, except limited information we must keep by law or for legitimate security, fraud-prevention or dispute purposes. If your synced files can't all be deleted, your account is not deleted and the app asks you to try again, so nothing is left behind. Data stored by Idealize on your device is removed as part of the deletion.
+p	Information already sent to external AI services may remain subject to their retention practices. Deleting your account does not cancel an active Apple subscription. You can manage subscriptions in your Apple account settings.
+h2	11. Your Privacy Rights
+p	Depending on where you live, you may have rights over your personal information under laws such as the General Data Protection Regulation (GDPR), including the right to access, correct, delete, restrict, port or object to the processing of your data, and to withdraw consent where processing is based on consent. You can turn off AI processing, Cloud Sync, screenshot catching and each device permission directly in the app or your device settings. To exercise other rights, contact us. You also have the right to complain to your local data-protection authority.
+h2	12. International Data Processing
+p	Our backend, including Cloud Sync storage, is hosted in the European Union (Ireland). Some other providers, including AI providers, may process information outside your country and outside the European Economic Area. Where required, appropriate safeguards are used for international transfers in line with applicable data-protection law.
+h2	13. Children's Privacy
+p	Idealize is not intended for children under the minimum age allowed to use the service under applicable law. We do not knowingly collect personal information from children where parental or guardian consent would be legally required.
+h2	14. Third-Party Services and Links
+p	Idealize may contain links to, or work with, third-party services. Their handling of personal information is governed by their own privacy policies.
+h2	15. Changes to This Privacy Policy
+p	We may update this Privacy Policy as Idealize evolves or as legal requirements change. When we do, we change the "Last updated" date at the top of this page and, where required by law, give additional notice of material changes.
+h2	16. Contact Us
+p	If you have questions about this Privacy Policy, your personal information or your rights, contact:
+p	Idealize
+p	Website: https://idealizepalace.com
+p	Email: support@idealizepalace.com
+h2	Idealize

@@ -1,0 +1,67 @@
+h2	Terms of Use
+p	Last updated: 8 November 2026
+p	Welcome to Idealize. These Terms of Use ("Terms") govern your access to and use of the Idealize app on iPhone, iPad and Mac, its widgets and extensions, the website idealizepalace.com, and related services ("Idealize", the "Service", "we", "us" or "our").
+p	By creating an account or using Idealize, you agree to these Terms.
+h2	1. About Idealize
+p	Idealize helps you get things out of your head. You can talk, type, snap or share what's on your mind, and Idealize sorts it into separate things, puts them in order, gives each one a tiny first step, and helps you remember and start them. It is made for busy, scattered and ADHD brains.
+p	We may change, improve, add or remove features as Idealize develops.
+h2	2. Not a Medical Service
+p	Idealize is a personal organisation tool. It is not a medical device or a health service, and it does not diagnose, treat, cure or prevent ADHD or any other condition. Nothing in Idealize is medical, psychological or therapeutic advice. If you have questions about your health, talk to a qualified professional. In an emergency, contact your local emergency services.
+h2	3. Eligibility and Accounts
+p	You must be legally allowed to use the Service under the laws that apply to you.
+p	When you create an account, you agree to give accurate information where it is required and to keep your sign-in details secure. You are responsible for activity on your account. If you think someone has accessed your account without permission, contact us.
+h2	4. Your Content
+p	Your thoughts remain yours. You keep ownership of everything you say, type, snap, share or upload to Idealize ("User Content"). Using Idealize does not transfer ownership of your User Content to us.
+p	You give Idealize only the limited rights needed to host, store, process, transmit and display your User Content in order to operate and provide the Service, including the features you choose to use.
+p	You confirm that you have the rights needed for the content you add. When you paste, screenshot or share messages or other material written by other people, make sure you are allowed to use it this way.
+h2	5. Reminders, Calendar and Screenshots
+p	Idealize can remind you about things, suggest when to leave, catch bills and free trials from your screenshots, and add events you confirm to your calendar. These features depend on your device, its settings and permissions, notification delivery, and the information available, and they can be late, incomplete or wrong.
+p	Please don't rely on Idealize alone for anything critical, such as medication, legal or official deadlines, payments or safety. Check important dates, amounts and details yourself. Idealize is not responsible for missed reminders, charges you did not cancel, or late payments.
+h2	6. AI and Generated Content
+p	Some features use automated systems and artificial intelligence to transcribe, sort, plan, suggest steps, read screenshots and write drafts. AI output can be inaccurate, incomplete, out of date or inappropriate, and may be similar to output produced for other people.
+p	Review what Idealize suggests before you rely on it, act on it or send it. Messages written for you are drafts: you decide whether to send them, and you are responsible for what you send. Idealize does not guarantee the accuracy, legality or suitability of AI-generated output.
+h2	7. Free Week, Free Plan and Pro
+p	New accounts can use Idealize Pro free for 7 days, with no payment and nothing to cancel. After that, your account continues on the free plan unless you choose to subscribe.
+p	The free plan includes core features and a limited number of uses of some features, such as spoken brain dumps each week. Idealize Pro unlocks more features and higher limits.
+p	To keep the Service fair and affordable, AI features on every plan are subject to reasonable usage limits. We may adjust features, limits and the content of each plan over time. Changes won't reduce what you have already paid for during the current subscription period.
+h2	8. Subscriptions and Payments
+p	Idealize Pro is offered as an auto-renewable subscription, monthly or yearly. Purchases in the app are processed by Apple through the App Store and are subject to Apple's payment and subscription terms. Payment is charged to your Apple account when you confirm the purchase. Where an introductory free trial is offered for a subscription, it converts to a paid subscription at the end of the trial unless you cancel at least 24 hours before it ends.
+p	Prices are shown in the app before you buy and may change for future periods. Existing subscribers are told in advance where required, according to Apple's rules.
+p	Idealize does not receive or store your full payment-card details.
+h2	9. Automatic Renewal and Cancellation
+p	Subscriptions renew automatically unless cancelled at least 24 hours before the end of the current period. You can manage or cancel your subscription in your Apple account settings. Cancelling stops future renewals, and you generally keep access to Pro until the end of the period you already paid for.
+p	Deleting the app or your Idealize account does not cancel an active subscription. To stop future charges, cancel through Apple.
+h2	10. Refunds
+p	Payments made through the App Store are processed by Apple, so refund requests are handled by Apple under its refund policies and applicable law.
+h2	11. Acceptable Use
+p	You agree not to use Idealize to break the law; infringe intellectual-property, privacy or other rights; upload malicious software or harmful code; try to gain unauthorised access to accounts, systems or infrastructure; interfere with the operation, security or usage limits of the Service; impersonate another person or organisation; or otherwise misuse Idealize.
+p	We may take reasonable action where needed to protect users, the Service or third parties from misuse.
+h2	12. No Guarantee of Results
+p	Idealize is a tool to help you organise your thoughts and get started on things. We don't guarantee any particular outcome, such as productivity, focus, finished tasks or savings. Idealize is not a substitute for professional legal, financial, tax, medical, psychological or other regulated advice.
+h2	13. Idealize Intellectual Property
+p	The Idealize app and website, including the software, interface, Bubbles and other characters, branding, logos, graphics, sounds, designs and other materials, are owned by or licensed to Idealize and are protected by intellectual-property laws. These Terms do not give you ownership of Idealize's intellectual property. This section does not affect your ownership of your User Content.
+h2	14. Third-Party Services
+p	Idealize relies on third-party services for some functionality, including infrastructure, sign-in, subscriptions, AI processing and Apple device services. These include providers such as Supabase, RevenueCat, Apple, Vercel and the AI providers listed in our Privacy Policy. Your use of some third-party services may also be subject to their own terms. We are not responsible for outages, changes or failures of third-party services outside our reasonable control.
+h2	15. Service Availability and Changes
+p	We aim to keep Idealize available and reliable, but we can't guarantee uninterrupted or error-free operation. The Service may sometimes be unavailable because of maintenance, updates, technical problems, third-party outages or circumstances outside our reasonable control. Features may change as Idealize develops.
+h2	16. Account Deletion and Termination
+p	You can stop using Idealize at any time. You can permanently delete your account in the app under You → Settings → Account → Delete Account.
+p	We may restrict, suspend or end access to the Service where reasonably necessary because of serious or repeated breaches of these Terms, unlawful activity, security threats, fraud, abuse or misuse of the Service.
+h2	17. Data and Privacy
+p	How we collect and process personal information is described in our Privacy Policy. By using Idealize, you acknowledge that your information is handled according to that policy and applicable law.
+h2	18. Disclaimers
+p	To the maximum extent permitted by law, Idealize is provided "as is" and "as available". We don't guarantee that the Service will always be uninterrupted, error-free, secure or suitable for a particular purpose. Nothing in these Terms excludes warranties, guarantees or rights that cannot lawfully be excluded under consumer-protection law.
+h2	19. Limitation of Liability
+p	To the maximum extent permitted by law, Idealize and its operators are not liable for indirect, incidental, special, consequential or similar damages arising from the use of, or inability to use, the Service, including missed reminders, deadlines or charges. Nothing in these Terms limits liability that cannot legally be limited or excluded, including mandatory rights available to consumers.
+h2	20. Apple App Store Terms
+p	If you downloaded Idealize from the App Store, Apple's Licensed Application End User License Agreement also applies. These Terms are between you and Idealize, not Apple. Apple is not responsible for Idealize or its content and has no obligation to provide maintenance or support for it.
+h2	21. Changes to These Terms
+p	We may update these Terms as Idealize evolves or to reflect changes to the Service, the law or our practices. When we do, we change the "Last updated" date above and, where required by law, give additional notice of material changes.
+h2	22. Governing Law
+p	These Terms are governed by applicable law, subject to any mandatory consumer protections and rights that apply where you live. Nothing in these Terms takes away consumer protections that cannot legally be waived.
+h2	23. Contact
+p	If you have questions about these Terms or Idealize, contact:
+p	Idealize
+p	Website: idealizepalace.com
+p	Email: support@idealizepalace.com
+h2	Idealize
