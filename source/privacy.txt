@@ -1,5 +1,5 @@
 h2	Privacy Policy
-p	Last updated: 8 November 2026
+p	Last updated: 11 November 2026
 p	Idealize respects your privacy. This Privacy Policy explains how information is collected, used, stored, shared and protected when you use the Idealize app (on iPhone, iPad and Mac), its widgets and share extension, the website idealizepalace.com, and related services.
 p	In short: your thoughts are yours. We don't sell your information, we don't use your content for advertising, and we don't use it to train AI models. Screenshots and photos are read on your device and the pictures never leave it. Cloud AI only runs after you allow it, and you can turn it off at any time.
 p	By using Idealize, you acknowledge the practices described in this Privacy Policy. Where consent is required for specific processing, we ask for it separately.
@@ -22,7 +22,9 @@ h3	Subscription Information
 p	Purchases are processed by Apple through the App Store. Idealize does not receive or store your full payment-card details. We use RevenueCat to manage subscription status and entitlements, which involves purchase identifiers, subscription status and related transaction information. Your plan and free-week status are also recorded in our backend so that Pro features and fair-use limits work for your account.
 h3	Technical Information
 p	We and our service providers may process limited technical information needed to operate, secure and fix Idealize, such as request information, diagnostic information and IP addresses used when your device talks to online services. To keep usage limits fair, our backend counts how many AI requests your account makes. When Cloud Sync is used, we also store technical information needed to keep your devices in step, such as a random device identifier, the device platform, and the last point each device synchronized to.
-p	Idealize does not use advertising identifiers, does not track you across other companies' apps or websites, and does not include third-party advertising or analytics SDKs.
+p	Idealize does not use advertising identifiers, does not track you across other companies' apps or websites, and does not include third-party advertising SDKs.
+h3	Anonymous Usage Statistics
+p	To understand which parts of the app help and where people get stuck, the app records simple usage events, such as a screen being opened, a step being finished, or a plan being chosen. Each event carries a random identifier created on your device that is not linked to your account, name or email, plus basic facts like the app version, device type, language and whether you are on Free or Pro. These events never include what you say, type, save or capture. They are sent to PostHog, hosted in the European Union, with location lookup turned off, and are not used for advertising or to track you across other apps. You can turn this off at any time under You → Privacy → Anonymous usage.
 h2	2. Permissions on Your Device
 p	Idealize asks for each permission only when a feature needs it. Everything else keeps working if you say no, and you can change your choice at any time in your device's Settings.
 h3	Microphone and Speech Recognition
@@ -83,6 +85,7 @@ p	Your synced content is private to your account. Our backend only lets your sig
 h2	7. Service Providers
 li	Supabase: backend, sign-in, Cloud Sync storage (including attached photos, recordings and files), plan and usage records, and routing of AI requests. Our Supabase project is hosted in the European Union (Ireland).
 li	RevenueCat: subscription management and entitlements.
+li	PostHog: anonymous usage statistics, hosted in the European Union.
 li	Apple: App Store purchases and subscriptions, Sign in with Apple, and device services such as speech, text recognition and Maps.
 li	Vercel: AI gateway infrastructure and request routing.
 li	Anthropic, Google, OpenAI, xAI and Perplexity: AI processing, transcription and search, depending on the feature.
