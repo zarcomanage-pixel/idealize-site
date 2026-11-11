@@ -1,0 +1,190 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Idealize Waitlist</title>
+<meta name="description" content="The new Idealize is almost here, made for busy, scattered, ADHD brains. Leave your email and you'll be the first to know when it's out.">
+<meta name="theme-color" content="#C9DFF3" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#16304D" media="(prefers-color-scheme: dark)">
+<link rel="canonical" href="https://idealizepalace.com/waitlist/">
+<meta property="og:site_name" content="Idealize">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://idealizepalace.com/waitlist/">
+<meta property="og:title" content="Be the first to try the new Idealize">
+<meta property="og:description" content="Made for busy, scattered, ADHD brains. Leave your email and you'll hear first.">
+<meta property="og:image" content="https://idealizepalace.com/assets/img/og.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
+<link rel="manifest" href="/site.webmanifest">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/assets/site.css">
+<style>
+  .wl { min-height: 100vh; min-height: 100svh; padding: 132px 0 110px; display: flex; align-items: center; }
+  .wl .wrap { display: grid; grid-template-columns: 1.05fr 0.95fr; gap: 48px; align-items: center; }
+  .wl h1 { margin: 22px 0 22px; font-size: clamp(42px, 6.4vw, 78px); }
+  .wl .lead { max-width: 32ch; }
+  .wl-form { margin-top: 34px; max-width: 480px; }
+  .wl-row { display: flex; gap: 10px; padding: 7px; border-radius: 999px; background: var(--card-solid); border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .wl-row input[type=email] { flex: 1; min-width: 0; border: 0; background: transparent; color: var(--ink); font: 500 17px var(--text); padding: 0 18px; outline: none; }
+  .wl-row input::placeholder { color: var(--ink-3); }
+  .wl-row:focus-within { box-shadow: var(--shadow), 0 0 0 3px color-mix(in srgb, var(--blue) 35%, transparent); }
+  .wl-row .btn { flex: none; min-height: 50px; }
+  .wl-row .btn[disabled] { opacity: .6; cursor: wait; transform: none; }
+  .wl-hp { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+  .wl-msg { min-height: 24px; margin-top: 14px; font-size: 15px; color: var(--ink-3); }
+  .wl-msg.err { color: #C2462B; }
+  .wl-done { display: none; margin-top: 34px; max-width: 480px; padding: 26px 28px; border-radius: 28px; background: var(--card-solid); border: 1px solid var(--line); box-shadow: var(--shadow); }
+  .wl-done h3 { font-size: 24px; }
+  .wl-done p { color: var(--ink-2); margin-top: 8px; }
+  .wl.joined .wl-form { display: none; }
+  .wl.joined .wl-done { display: block; }
+  .wl-perks { list-style: none; margin-top: 30px; display: grid; gap: 12px; max-width: 440px; }
+  .wl-perks li { display: flex; gap: 12px; color: var(--ink-2); font-size: 16px; }
+  .wl-perks li::before { content: ""; flex: none; width: 10px; height: 10px; margin-top: 8px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #F5FAFF, #9CC6EC 70%, #7DAEDD); box-shadow: 0 0 0 1px rgba(125, 174, 221, .6); }
+  .wl-art { position: relative; height: 560px; }
+  .wl-art .orb-big { width: 300px; height: 300px; left: 50%; top: 50%; margin: -170px 0 0 -150px; }
+  .wl-art .orb-big svg { position: absolute; left: 50%; top: 50%; width: 60px; height: 60px; transform: translate(-50%, -50%); filter: drop-shadow(0 0 14px rgba(255,255,255,.9)); z-index: 1; }
+  .wl-art .peek { position: absolute; width: 150px; left: 6%; bottom: 40px; transform: rotate(-6deg); filter: drop-shadow(0 18px 24px rgba(31,58,82,.25)); animation: bob 6s ease-in-out infinite; }
+  .wl-art .thought { font-size: 15px; }
+  @media (max-width: 900px) {
+    .wl { padding: 108px 0 80px; }
+    .wl .wrap { grid-template-columns: 1fr; text-align: center; gap: 10px; }
+    .wl .lead, .wl-form, .wl-done, .wl-perks { margin-left: auto; margin-right: auto; }
+    .wl-perks li { text-align: left; }
+    .wl-art { height: 380px; order: -1; }
+    .wl-art .orb-big { width: 200px; height: 200px; margin: -110px 0 0 -100px; }
+    .wl-art .peek { width: 100px; left: calc(50% - 170px); bottom: 20px; }
+  }
+  @media (max-width: 520px) {
+    .wl-row { flex-direction: column; border-radius: 26px; padding: 8px; }
+    .wl-row input[type=email] { min-height: 50px; text-align: center; }
+    .wl { padding-top: 84px; }
+    .wl h1 { margin: 14px 0 14px; }
+    .wl-form { margin-top: 24px; }
+    .wl-art { height: 190px; }
+    .wl-art .orb-big { width: 150px; height: 150px; margin: -80px 0 0 -75px; }
+    .wl-art .peek { width: 72px; left: calc(50% - 120px); bottom: 6px; }
+    .wl-art .thought { display: none; }
+  }
+</style>
+</head>
+<body>
+
+<header class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/assets/img/icon.png" alt="">Idealize</a>
+    <nav>
+      <a href="/#how">How it works</a>
+      <a href="/support/">Support</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="sky wl" id="wl">
+    <canvas class="stars" aria-hidden="true"></canvas>
+    <div class="cloud" style="top:12%;width:520px;height:150px;animation-duration:140s;animation-delay:-40s"></div>
+    <div class="cloud" style="top:52%;width:380px;height:120px;animation-duration:110s;animation-delay:-80s"></div>
+    <div class="cloud" style="top:82%;width:620px;height:170px;animation-duration:170s;animation-delay:-10s"></div>
+    <div class="wrap">
+      <div>
+        <span class="eyebrow"><svg viewBox="-1 -1 2 2"><path fill="currentColor" d="M0 -1C.09 -.3 .3 -.09 1 0C.3 .09 .09 .3 0 1C-.09 .3 -.3 .09 -1 0C-.3 -.09 -.09 -.3 0 -1Z"/></svg>Waitlist</span>
+        <h1>The new Idealize is almost here.</h1>
+        <p class="lead">Made for busy, scattered, ADHD brains. Leave your email and you'll be the first to know when it's out.</p>
+
+        <form class="wl-form" id="wl-form" novalidate>
+          <div class="wl-row">
+            <label for="wl-email" class="wl-hp">Email</label>
+            <input id="wl-email" name="email" type="email" inputmode="email" autocomplete="email" placeholder="you@email.com" required maxlength="254">
+            <button class="btn" type="submit">Tell me first</button>
+          </div>
+          <div class="wl-hp" aria-hidden="true"><label>Leave this empty <input name="website" tabindex="-1" autocomplete="off"></label></div>
+          <p class="wl-msg" id="wl-msg" role="status" aria-live="polite">One email when it's out. No spam, ever.</p>
+        </form>
+
+        <div class="wl-done" role="status" aria-live="polite">
+          <h3 class="round">You're on the list ✨</h3>
+          <p id="wl-done-text">We'll email you the day it's out. One less thing to remember.</p>
+        </div>
+
+        <ul class="wl-perks">
+          <li>Ramble it all out, Idealize sorts it for you</li>
+          <li>Every thing gets a tiny first step</li>
+          <li>Reminders on time, so your head can let go</li>
+        </ul>
+      </div>
+
+      <div class="wl-art" aria-hidden="true">
+        <div class="thought" style="left:2%;top:40px">Call the dentist <span>for weeks now</span></div>
+        <div class="thought" style="right:0;top:110px;animation-delay:-3s">Text mum back</div>
+        <div class="thought" style="right:6%;bottom:70px;animation-delay:-5s">Feed the cat 🐈</div>
+        <div class="orb orb-big"><svg viewBox="-1 -1 2 2"><path fill="#fff" d="M0 -1C.09 -.3 .3 -.09 1 0C.3 .09 .09 .3 0 1C-.09 .3 -.3 .09 -1 0C-.3 -.09 -.09 -.3 0 -1Z"/></svg></div>
+        <img class="peek" src="/assets/img/bubbles-welcome.png" alt="">
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/"><img src="/assets/img/icon.png" alt="">Idealize</a>
+      <p class="small">We only use your email to tell you about Idealize. Ask us any time and we'll delete it. Idealize isn't a medical app and doesn't diagnose or treat anything.</p>
+    </div>
+    <div class="links">
+      <a href="/privacy/">Privacy Policy</a>
+      <a href="/terms/">Terms of Use</a>
+      <a href="/support/">Support</a>
+      <a href="mailto:support@idealizepalace.com">support@idealizepalace.com</a>
+    </div>
+  </div>
+</footer>
+
+<script src="/assets/site.js"></script>
+<script>
+(function () {
+  // Emails go to the Idealize Supabase table "waitlist". The key below is the public anon key:
+  // the table only allows inserts, nobody can read the list from the browser.
+  var URL_ = "https://sbcvyzttncdjzwvnengj.supabase.co/rest/v1/waitlist";
+  var KEY = "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNiY3Z5enR0bmNkanp3dm5lbmdqIiwicm9sZSI6ImFub24iLCJpYXQiOjE3OTEyMzQ4NDEsImV4cCI6MjEwNjgxMDg0MX0.EMh3ekMElNKpe1adjjiX3AkqHzMoOktVqNkhvdMqkRw";
+  var page = document.getElementById("wl");
+  var form = document.getElementById("wl-form");
+  var input = document.getElementById("wl-email");
+  var msg = document.getElementById("wl-msg");
+  var btn = form.querySelector("button");
+  var q = new URLSearchParams(location.search);
+  var source = (q.get("src") || q.get("utm_source") || (document.referrer ? new URL(document.referrer).hostname : "direct")).slice(0, 60);
+
+  function say(text, err) { msg.textContent = text; msg.classList.toggle("err", !!err); }
+  function done(again) {
+    if (again) document.getElementById("wl-done-text").textContent = "You were already on it, so you're all set. We'll email you the day it's out.";
+    page.classList.add("joined");
+  }
+
+  form.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (form.website.value) { done(); return; }
+    var email = input.value.trim().toLowerCase();
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email)) { say("That email doesn't look right, try again?", true); input.focus(); return; }
+    btn.disabled = true; say("Saving…");
+    fetch(URL_, {
+      method: "POST",
+      headers: { "apikey": KEY, "Authorization": "Bearer " + KEY, "Content-Type": "application/json", "Prefer": "return=minimal" },
+      body: JSON.stringify({ email: email, source: source })
+    }).then(function (r) {
+      if (r.status === 201) return done(false);
+      if (r.status === 409) return done(true);
+      throw new Error(r.status);
+    }).catch(function () {
+      say("Something went wrong on our side. Try again in a minute?", true);
+    }).finally(function () { btn.disabled = false; });
+  });
+})();
+</script>
+</body>
+</html>
