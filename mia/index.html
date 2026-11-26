@@ -24,7 +24,7 @@
   html, body { margin: 0; background: var(--bg); color: var(--ink); }
   body { font: 600 17px/1.45 Nunito, ui-rounded, -apple-system, system-ui, sans-serif; min-height: 100svh; display: flex; justify-content: center; padding: 40px 16px calc(40px + env(safe-area-inset-bottom)); }
   main { width: 100%; max-width: 420px; text-align: center; }
-  .avatar { width: 84px; height: 84px; border-radius: 50%; margin: 0 auto 14px; display: grid; place-items: center; background: var(--pink); font-size: 40px; }
+  .avatar { width: 84px; height: 84px; border-radius: 50%; margin: 0 auto 14px; display: block; object-fit: cover; background: var(--pink); }
   h1 { font-size: 22px; font-weight: 800; margin: 0 0 4px; }
   .handle { color: var(--ink-2); font-size: 15px; margin: 0 0 30px; }
   .card { background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: 26px 22px 22px; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
@@ -43,7 +43,7 @@
 </head>
 <body>
 <main>
-  <div class="avatar" aria-hidden="true">🫠</div>
+  <img class="avatar" src="/assets/img/mia.jpg" alt="mia">
   <h1>mia parker</h1>
   <p class="handle">@mia_dumpz · nyc · adhd brain</p>
 
