@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>the app i use for my adhd brain</title>
+<meta name="description" content="the app i use when my head is too full.">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#F6EFE6">
+<meta property="og:title" content="the app i use for my adhd brain">
+<meta property="og:description" content="i just ramble everything into it and it sorts it for me">
+<meta property="og:image" content="https://idealizepalace.com/assets/img/og.png">
+<link rel="icon" type="image/png" sizes="192x192" href="/assets/img/icon-192.png">
+<link rel="apple-touch-icon" href="/assets/img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@600;700;800&display=swap" rel="stylesheet">
+<style>
+  :root { --bg: #F6EFE6; --card: #FFFFFF; --ink: #1F2430; --ink-2: #5B6170; --line: #E8DFD3; --btn: #111318; --btn-ink: #FFFFFF; --pink: #F4C9D4; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #15171D; --card: #1F222A; --ink: #F3F1EE; --ink-2: #A9ADB8; --line: #2D313B; --btn: #FFFFFF; --btn-ink: #111318; --pink: #5A3843; }
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; background: var(--bg); color: var(--ink); }
+  body { font: 600 17px/1.45 Nunito, ui-rounded, -apple-system, system-ui, sans-serif; min-height: 100svh; display: flex; justify-content: center; padding: 40px 16px calc(40px + env(safe-area-inset-bottom)); }
+  main { width: 100%; max-width: 420px; text-align: center; }
+  .avatar { width: 84px; height: 84px; border-radius: 50%; margin: 0 auto 14px; display: grid; place-items: center; background: var(--pink); font-size: 40px; }
+  h1 { font-size: 22px; font-weight: 800; margin: 0 0 4px; }
+  .handle { color: var(--ink-2); font-size: 15px; margin: 0 0 30px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 26px; padding: 26px 22px 22px; box-shadow: 0 10px 30px rgba(0,0,0,.06); }
+  .app { display: flex; align-items: center; gap: 14px; text-align: left; margin-bottom: 18px; }
+  .app img { width: 64px; height: 64px; border-radius: 15px; flex: none; }
+  .app b { display: block; font-size: 19px; font-weight: 800; }
+  .app span { color: var(--ink-2); font-size: 14px; }
+  .note { text-align: left; margin: 0 0 22px; font-size: 16px; }
+  .btn { display: flex; align-items: center; justify-content: center; gap: 10px; width: 100%; min-height: 56px; border-radius: 999px; background: var(--btn); color: var(--btn-ink); text-decoration: none; font-weight: 800; font-size: 17px; border: 0; cursor: pointer; }
+  .btn svg { width: 20px; height: 20px; fill: currentColor; }
+  .btn.ghost { background: transparent; color: var(--ink); border: 1.5px solid var(--line); margin-top: 10px; min-height: 50px; font-size: 15px; }
+  .hint { display: none; margin-top: 18px; padding: 14px 16px; border-radius: 18px; background: color-mix(in srgb, var(--pink) 55%, transparent); font-size: 15px; text-align: left; }
+  .hint.on { display: block; }
+  .small { color: var(--ink-2); font-size: 13px; margin-top: 22px; }
+</style>
+</head>
+<body>
+<main>
+  <div class="avatar" aria-hidden="true">🫠</div>
+  <h1>mia parker</h1>
+  <p class="handle">@mia_dumpz · nyc · adhd brain</p>
+
+  <div class="card">
+    <div class="app">
+      <img src="/assets/img/icon-192.png" alt="">
+      <div><b>Idealize</b><span>the app i use for my adhd brain</span></div>
+    </div>
+    <p class="note">ok so for everyone asking :) when my head is too full i just ramble it all into this and it sorts it for me and gives me one tiny first step. its free to try</p>
+
+    <a class="btn" id="get" href="https://apps.apple.com/app/apple-store/id6819672437?pt=129569890&amp;ct=tt-mia&amp;mt=8">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.37 12.6c.02 2.5 2.2 3.33 2.23 3.34-.02.06-.35 1.19-1.15 2.36-.69 1.01-1.41 2.02-2.55 2.04-1.11.02-1.47-.66-2.75-.66-1.27 0-1.67.64-2.73.68-1.1.04-1.94-1.09-2.64-2.1-1.43-2.07-2.53-5.85-1.06-8.4.73-1.27 2.04-2.07 3.46-2.09 1.08-.02 2.1.73 2.76.73.66 0 1.9-.9 3.2-.77.55.02 2.08.22 3.06 1.66-.08.05-1.83 1.07-1.83 3.2ZM14.27 4.46c.58-.71.98-1.69.87-2.67-.84.03-1.86.56-2.46 1.27-.54.62-1.01 1.62-.88 2.58.94.07 1.89-.48 2.47-1.18Z"/></svg>
+      get it on the app store
+    </a>
+    <button class="btn ghost" id="copy" type="button">copy link</button>
+
+    <div class="hint" id="hint">
+      <b>if the button doesnt open:</b> tap the <b>···</b> at the top right and pick <b>open in browser</b>, then tap the button again. tiktok sometimes blocks the app store 🙄
+    </div>
+  </div>
+
+  <p class="small">iphone, ipad + mac</p>
+</main>
+<script>
+  var ua = navigator.userAgent || "";
+  var inApp = /musical_ly|BytedanceWebview|TikTok|Bytedance|Instagram|FBAN|FBAV/i.test(ua);
+  var hint = document.getElementById("hint");
+  if (inApp) hint.classList.add("on");
+  document.getElementById("get").addEventListener("click", function () {
+    setTimeout(function () { hint.classList.add("on"); }, 1200);
+  });
+  document.getElementById("copy").addEventListener("click", function () {
+    var link = document.getElementById("get").href, b = this;
+    function done() { b.textContent = "copied, paste it in safari :)"; }
+    if (navigator.clipboard && navigator.clipboard.writeText) {
+      navigator.clipboard.writeText(link).then(done, function () { prompt("copy this link", link); });
+    } else { prompt("copy this link", link); }
+  });
+</script>
+</body>
+</html>
