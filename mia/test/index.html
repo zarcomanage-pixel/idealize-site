@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>app store test</title>
+<style>
+body{font:600 17px/1.4 -apple-system,system-ui,sans-serif;margin:0;padding:24px 16px;background:#F6EFE6;color:#1F2430}
+a,button{display:block;width:100%;box-sizing:border-box;margin:0 0 14px;padding:16px;border-radius:16px;background:#111318;color:#fff;text-decoration:none;font:inherit;border:0;text-align:left}
+small{display:block;font-weight:500;opacity:.7;font-size:13px}
+p{font-size:14px;color:#5B6170}
+</style></head><body>
+<h2>tap each one, note which open the App Store</h2>
+<p>after each try come back to this page. ua: <span id="ua"></span></p>
+
+<a href="https://apps.apple.com/app/apple-store/id6819672437?pt=129569890&ct=tt-mia&mt=8">1. normal link (what's live now)<small>https apps.apple.com + tracking</small></a>
+
+<a href="itms-apps://apps.apple.com/app/id6819672437?pt=129569890&ct=tt-mia&mt=8">2. itms-apps<small>direct App Store scheme</small></a>
+
+<a href="https://apps.apple.com/app/apple-store/id6819672437?pt=129569890&ct=tt-mia&mt=8" target="_blank" rel="noopener">3. normal link, new window<small>target=_blank</small></a>
+
+<button onclick="location.href='itms-apps://apps.apple.com/app/id6819672437?pt=129569890&ct=tt-mia&mt=8'">4. itms-apps via script<small>tap runs location.href</small></button>
+
+<a href="https://apps.apple.com/us/app/id6819672437">5. plain store link, no tracking<small>apps.apple.com/us/app/id…</small></a>
+
+<a href="x-safari-https://idealizepalace.com/mia/">6. jump to Safari automatically<small>opens /mia in Safari in one tap (iOS 17+)</small></a>
+
+<script>document.getElementById('ua').textContent=navigator.userAgent</script>
+</body></html>
