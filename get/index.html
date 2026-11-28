@@ -59,9 +59,19 @@
   .copy.done { border-color: #3F7A5C; color: #3F7A5C; }
   .search { margin-top: 10px; }
   .tt .or { margin: 8px 0 0; }
+  .copy, #copyhint { display: none; }
+  .intt .copy, .intt #copyhint { display: block; }
+  .intt .badge { display: none; }
+  .intt .facts { margin-top: 14px; }
+  .intt .tt { display: block; margin-top: 16px; }
+  .copy { margin-top: 12px; }
+  .ptr { display: none; position: fixed; top: 10px; right: 12px; z-index: 9; background: var(--ink); color: #fff; font-size: 14px; font-weight: 800; padding: 9px 14px; border-radius: 14px; box-shadow: 0 6px 18px rgba(0,0,0,.18); }
+  .intt .ptr { display: block; }
 </style>
+<script>if (/musical_ly|BytedanceWebview|TikTok|Bytedance/i.test(navigator.userAgent || "")) document.documentElement.classList.add("intt");</script>
 </head>
 <body>
+<div class="ptr">Tap ··· then Open in browser ↗</div>
 <main>
   <img class="icon" src="/assets/img/icon-192.png" alt="Idealize app icon">
   <h1>Idealize</h1>
@@ -93,12 +103,11 @@
         <li>Choose <b>Open in browser</b></li>
         <li>Tap <b>Download on the App Store</b></li>
       </ol>
-      <p class="or">Or tap <b>Copy</b> below and paste it in the App Store.</p>
+      <p class="search" id="copyhint">Or copy the name and paste it in App Store search</p>
+      <button class="copy" id="copy" type="button">Copy &ldquo;Idealize ADHD&rdquo;</button>
     </div>
   </div>
 
-  <button class="copy" id="copy" type="button">Copy &ldquo;Idealize ADHD&rdquo;</button>
-  <p class="search" id="copyhint">Then open the App Store and paste it in Search</p>
   <footer><a href="/privacy/">Privacy</a> · <a href="/">idealizepalace.com</a></footer>
 </main>
 <script>
