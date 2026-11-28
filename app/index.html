@@ -72,7 +72,7 @@
 <script>if (/musical_ly|BytedanceWebview|TikTok|Bytedance/i.test(navigator.userAgent || "")) document.documentElement.classList.add("intt");</script>
 </head>
 <body>
-<div class="ptr">Tap ··· then Open in browser ↗</div>
+<div class="ptr">To download: tap ··· then Open in browser ↗</div>
 <main>
   <img class="icon" src="/assets/img/icon-192.png" alt="Idealize app icon">
   <h1>Idealize</h1>
@@ -97,10 +97,6 @@
     </a>
     <div class="facts"><span>Free week</span><span>No card needed</span><span>Official App Store</span></div>
 
-    <div class="tt" id="tt">
-      <button class="copy" id="copy" type="button">Copy &ldquo;Idealize ADHD&rdquo;</button>
-      <p class="search" id="copyhint"></p>
-    </div>
   </div>
 
   <footer><a href="/privacy/">Privacy</a> · <a href="/">idealizepalace.com</a></footer>
@@ -139,7 +135,7 @@
       try { document.execCommand("copy"); } catch (e) {}
       document.body.removeChild(t); done();
     }
-    copy.addEventListener("click", function () {
+    if (copy) copy.addEventListener("click", function () {
       ev("link_copy_tap");
       if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText("Idealize ADHD").then(done, fallback); else fallback();
     });
