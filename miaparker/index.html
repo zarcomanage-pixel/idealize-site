@@ -58,6 +58,10 @@
   .search b { color: var(--ink); }
   footer { margin-top: 26px; font-size: 12px; color: var(--ink-3); }
   footer a { color: var(--ink-3); }
+  .copy { display: block; width: 100%; margin-top: 18px; min-height: 54px; border-radius: 14px; border: 1.5px solid var(--line); background: #fff; color: var(--ink); font: 800 17px/1.2 Nunito, ui-rounded, -apple-system, system-ui, sans-serif; cursor: pointer; box-shadow: 0 4px 14px rgba(31,36,48,.05); }
+  .copy.done { border-color: #3F7A5C; color: #3F7A5C; }
+  .search { margin-top: 10px; }
+  .tt .or { margin: 8px 0 0; }
 </style>
 </head>
 <body>
@@ -94,16 +98,47 @@
         <li>choose <b>Open in browser</b></li>
         <li>tap <b>Download on the App Store</b></li>
       </ol>
+      <p class="or">or tap <b>copy</b> below and paste it in the app store :)</p>
     </div>
   </div>
 
-  <p class="search">or just search <b>Idealize ADHD</b> in the app store</p>
+  <button class="copy" id="copy" type="button">copy &ldquo;Idealize ADHD&rdquo;</button>
+  <p class="search" id="copyhint">then open the app store and paste it in search</p>
   <footer><a href="/privacy/">Privacy</a> · <a href="/">idealizepalace.com</a></footer>
 </main>
 <script>
   if (/musical_ly|BytedanceWebview|TikTok|Bytedance/i.test(navigator.userAgent || "")) {
     document.getElementById("tt").classList.add("on");
   }
+</script>
+<script>
+  (function () {
+    var K = "phc_vDJv6ztknBA2YRVR6KC6F3j2TRK58YtbgSRV9fyjnZep";
+    var tt = /musical_ly|BytedanceWebview|TikTok|Bytedance/i.test(navigator.userAgent || "");
+    var get = document.getElementById("get"), copy = document.getElementById("copy"), hint = document.getElementById("copyhint");
+    var ct = (get.href.match(/ct=([a-z0-9-]+)/) || [])[1] || "";
+    var page = location.pathname.replace(/\//g, "") || "home";
+    var id = "web-" + Math.random().toString(36).slice(2) + Date.now().toString(36);
+    function ev(name) {
+      try {
+        fetch("https://eu.i.posthog.com/capture/", { method: "POST", mode: "no-cors", keepalive: true, headers: { "Content-Type": "text/plain" },
+          body: JSON.stringify({ api_key: K, event: name, distinct_id: id, properties: { $process_person_profile: false, $geoip_disable: true, page: page, ct: ct, in_tiktok: tt, $current_url: location.origin + location.pathname } }) });
+      } catch (e) {}
+    }
+    ev("link_page_view");
+    get.addEventListener("click", function () { ev("link_download_tap"); });
+    function done() { copy.textContent = "copied ✓"; copy.classList.add("done"); hint.innerHTML = "now open the <b>app store</b>, tap search and paste"; }
+    function fallback() {
+      var t = document.createElement("textarea"); t.value = "Idealize ADHD"; t.setAttribute("readonly", ""); t.style.position = "fixed"; t.style.opacity = "0";
+      document.body.appendChild(t); t.select(); t.setSelectionRange(0, 99);
+      try { document.execCommand("copy"); } catch (e) {}
+      document.body.removeChild(t); done();
+    }
+    copy.addEventListener("click", function () {
+      ev("link_copy_tap");
+      if (navigator.clipboard && navigator.clipboard.writeText) navigator.clipboard.writeText("Idealize ADHD").then(done, fallback); else fallback();
+    });
+  })();
 </script>
 </body>
 </html>
