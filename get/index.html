@@ -60,7 +60,8 @@
   .search { margin-top: 10px; }
   .tt .or { margin: 8px 0 0; }
   .copy, #copyhint { display: none; }
-  .intt .copy, .intt #copyhint { display: block; }
+  .intt .copy { display: block; }
+  .intt .tt { background: none; padding: 0; }
   .intt .badge { display: none; }
   .intt .facts { margin-top: 14px; }
   .intt .tt { display: block; margin-top: 16px; }
@@ -97,13 +98,7 @@
     <div class="facts"><span>Free week</span><span>No card needed</span><span>Official App Store</span></div>
 
     <div class="tt" id="tt">
-      <b>Opening from TikTok?</b> TikTok doesn't let links open the App Store, so:
-      <ol>
-        <li>Tap <b>···</b> at the top right</li>
-        <li>Choose <b>Open in browser</b></li>
-        <li>Tap <b>Download on the App Store</b></li>
-      </ol>
-      <p class="search" id="copyhint">Or copy the name and paste it in App Store search</p>
+      <p class="search" id="copyhint"></p>
       <button class="copy" id="copy" type="button">Copy &ldquo;Idealize ADHD&rdquo;</button>
     </div>
   </div>
@@ -137,7 +132,7 @@
     }
     ev("link_page_view");
     get.addEventListener("click", function () { ev("link_download_tap"); });
-    function done() { copy.textContent = "Copied ✓"; copy.classList.add("done"); hint.innerHTML = "Now open the <b>App Store</b>, tap Search and paste"; }
+    function done() { copy.textContent = "Copied ✓"; copy.classList.add("done"); hint.style.display = "block"; hint.innerHTML = "Now open the <b>App Store</b>, tap Search and paste"; }
     function fallback() {
       var t = document.createElement("textarea"); t.value = "Idealize ADHD"; t.setAttribute("readonly", ""); t.style.position = "fixed"; t.style.opacity = "0";
       document.body.appendChild(t); t.select(); t.setSelectionRange(0, 99);
